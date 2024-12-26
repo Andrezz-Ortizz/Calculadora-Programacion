@@ -1,0 +1,63 @@
+﻿<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Calculadora v 0.2</title>
+    <link rel="stylesheet" href="Style.css" />
+    <script src="Script.js"></script>
+</head>
+<body>
+    <!--<img src="Matematicas.png" alt="AmericaDeCali">-->
+    <h3>Calculadora Básica</h3>
+    <div class="calculator">
+        <div class="led-container">
+            <div id="ledEncendido" class="led"></div>
+            <div id="ledApagado" class="led"></div>
+        </div>
+        <input type="text" id="display" class="display" readonly />
+
+        <!-- Botones -->
+        <div class="buttons">
+
+            <button class="boton block" onclick="encenderLed()">On</button>
+            <button class="boton block" onclick="apagarLed()">Off</button>
+            <button class="boton block" onclick="calcularSeno()">Sin</button>
+            <button class="boton block" onclick="calcularCoseno()">Cos</button>
+            <button class="boton block" onclick="calcularTangente()">Tan</button>
+
+            <button class="boton block" onclick="calcularRaiz()">√</button>
+            <button class="boton block" onclick="calcularRaizCubica()">∛</button>
+            <button class="boton block" onclick="calcularRaizCuarta()">∜</button>
+            <button class="boton block" onclick="calcularLog()">log</button>
+            <button class="boton block" onclick="elevarAlCuadrado()">x²</button>
+
+            <button class="boton block" onclick="agregar('7')">7</button>
+            <button class="boton block" onclick="agregar('8')">8</button>
+            <button class="boton block" onclick="agregar('9')">9</button>
+            <button class="boton block" onclick="agregar('/')">÷</button>
+            <button class="block" onclick="insertarPI()">π</button>
+
+            <button class="boton block" onclick="agregar('4')">4</button>
+            <button class="boton block" onclick="agregar('5')">5</button>
+            <button class="boton block" onclick="agregar('6')">6</button>
+            <button class="boton block" onclick="agregar('*')">×</button>
+
+            <button class="boton block" onclick="calcularPorcentaje()">%</button>
+            <button class="boton block" onclick="agregar('1')">1</button>
+            <button class="boton block" onclick="agregar('2')">2</button>
+            <button class="boton block" onclick="agregar('3')">3</button>
+            <button class="boton block" onclick="agregar('+')">+</button>
+
+            <button class="boton block" onclick="limpiar()">CE</button>
+            <button class="boton block" onclick="agregar('0')">0</button>
+            <button class="boton block" onclick="borrarUltimo()" class="Delete">←</button>
+            <button class="boton block" onclick="calcular()" class="equal">=</button>
+            <button class="boton block" onclick="agregar('-')">-</button>
+
+            <button class="boton block" onclick="agregar('.')">.</button>
+            <button class="boton block" onclick="insertarParentesisAbrir()">&#40;</button>
+            <button class="boton block" onclick="insertarParentesisCerrar()">&#41;</button>
+
+        </div>
+    </div>
+</body>
+</html>
